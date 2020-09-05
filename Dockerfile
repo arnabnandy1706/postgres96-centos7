@@ -9,7 +9,7 @@ MAINTAINER Arnab Kumar Nandy
 
 RUN yum -y update; yum clean all
 RUN yum -y install sudo epel-release; yum clean all
-RUN yum -y install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-redhat96-9.6-3.noarch.rpm
+RUN yum -y install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
 RUN yum -y install postgresql96-server postgresql96 postgresql96-contrib supervisor pwgen; yum clean all
 #RUN yum -y install postgresql-server postgresql postgresql-contrib supervisor pwgen; yum clean all
 
